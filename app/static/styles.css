@@ -28,8 +28,12 @@ html, body {
     margin: 10%
 }
 .left{
-      /* padding: 20px */
+      /* float: center; */
       /* border-right: 4px dotted blue; */
+}
+.img-circle {
+    border-radius: 50%;
+    width: 100%;
 }
 .nav-tabs > li {
     float:none;
