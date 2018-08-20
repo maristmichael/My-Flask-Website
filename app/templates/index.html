@@ -1,48 +1,89 @@
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
+
 {% extends "bootstrap/base.html" %}
 {% block title %} Michael Gutierrez {% endblock %}
+    <!-- <head>
+        <title>Michael Gutierrez</title>
+        <meta name="description" content="Michael Gutierrez's Website">
+        <meta name="author" content="Michael Gutierrez">
 
-{% block navbar %}
-    <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <a class="navbar-brand" href="#">Michael</a>
-        <div class="navbar-header">
-            <!-- Responsive Navbar -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="#">About Me</a></li>
-            </ul>
-        </div>
-    </nav>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
 
-    <!-- Spacer between the jumbotron and the navbar -->
-    <div class="page-header">
-        <div class="clearfix"></div>
-    </div>
-{% endblock %}
+        
+        <link href="https://bootswatch.com/3/darkly/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href= "{{ url_for('static',filename='styles.css') }} " rel="stylesheet" type= "text/css">
+
+    </head> -->
 
 {% block content %}
-    <div class="jumbotron jstyle">
-        <div class="container cbox">
-            <h1>Hello</h1>
-            <p>Stuff about me will be written eventually</p>
-            <hr>
+
+<body>
+    <div class="container full">
+        <div class="col-md-3 left">
+            <div class="row text-center">
+                <div class="jumbotron">DUMB</div>
+                <div class="jumbotron">DUMB</div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row text-center">
+                    <div class="tabbable-panel">
+                        <div class="tabbable-line">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#tab_default_1" data-toggle="tab"> Tab 1 </a></li>
+                                <li><a href="#tab_default_2" data-toggle="tab"> Tab 2 </a></li>
+                                <li><a href="#tab_default_3" data-toggle="tab"> Tab 3 </a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab_default_1">
+                                    <p>I'm in Tab 1.</p>
+                                    <p>
+                                        Duis autem eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
+                                    </p>
+                                </div>
+                                <div class="tab-pane" id="tab_default_2">
+                                    <p>Howdy, I'm in Tab 2.</p>
+                                    <p>
+                                        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
+                                    </p>
+                                </div>
+                                <div class="tab-pane" id="tab_default_3">
+                                    <p>Howdy, I'm in Tab 3.</p>
+                                    <p>
+                                        Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</body>
 {% endblock %}
+
+
+
 
 {% block scripts %}
     {{ super() }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
 {% endblock %}
 
 {% block styles %}
     {{super()}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://bootswatch.com/3/darkly/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href= "{{ url_for('static',filename='styles.css') }} " rel="stylesheet" type= "text/css">
 {% endblock %}
